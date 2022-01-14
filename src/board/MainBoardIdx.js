@@ -8,7 +8,7 @@ function MainBoardIdx({match}) {
     const [viewContent , setViewContent] = useState([]);
 
     useEffect(()=>{
-      Axios.get('http://localhost:5001/api/mainboard/idx').then((response)=>{
+      Axios.get('http://ec2-3-36-93-166.ap-northeast-2.compute.amazonaws.com:3000/api/mainboard/idx').then((response)=>{
         setViewContent(response.data);
       })
     },[viewContent])

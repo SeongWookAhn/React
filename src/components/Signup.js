@@ -73,7 +73,7 @@ function Signup(props) {
         }
     }
     const fetchsignup = async() => {
-        axios.post("http://localhost:5001/api/signup", {
+        axios.post("http://ec2-3-36-93-166.ap-northeast-2.compute.amazonaws.com:3000/api/signup", {
             userid: userid,
             userpassword: userpassword,
             usernickname: usernickname,
