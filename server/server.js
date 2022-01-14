@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const api = require("./routes/index");
 const http = require("http").createServer(app);
 const cors = require("cors");
 const bodyParser = require('body-parser');
@@ -9,7 +8,6 @@ const io = require('socket.io')(http, { cors: { origin: "*" } });
 app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
-app.use("/api", api);
 const pool = require("./mysqlcon");
 
 // 로그인

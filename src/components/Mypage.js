@@ -11,7 +11,7 @@ export default function Mypage() {
   const [isDaumPost, setIsDaumPost] = useState(false);
 
   useEffect(()=>{
-    axios.post("http://ec2-3-36-93-166.ap-northeast-2.compute.amazonaws.com:3000/api/mypage", {
+    axios.post("http://localhost:5001/api/mypage", {
       signinid: window.localStorage.getItem("loginUser"),
   }).then((response)=>{
       setUsernickname(response.data.usernickname)
@@ -52,7 +52,7 @@ export default function Mypage() {
   }
 
   const onChangeUserSubmitHandler = async() => {
-    axios.post("http://ec2-3-36-93-166.ap-northeast-2.compute.amazonaws.com:3000/api/changeuser", {
+    axios.post("http://localhost:5001/api/changeuser", {
       userid: window.localStorage.getItem("loginUser"),
       usernickname: usernickname,
       useremail: useremail,

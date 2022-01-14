@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import classnames from "classnames";
 import axios from 'axios';
 
-const socket = io.connect("http://ec2-3-36-93-166.ap-northeast-2.compute.amazonaws.com:3000/");
+const socket = io.connect("http://localhost:5001");
 
 function Chat() {
   // const username = "user"
@@ -28,7 +28,7 @@ function Chat() {
   const chatInput = document.querySelector('.message')
 
   const fetchchat = async() => {
-    const result = await axios.get("http://ec2-3-36-93-166.ap-northeast-2.compute.amazonaws.com:3000/api/chat").then(res => res.data)
+    const result = await axios.get("http://localhost:5001/api/chat").then(res => res.data)
     const chatmessages = document.querySelector('#chatmessages')
     let nickname = document.querySelector('#usernick').value
     for(let i = 0; i < result.length; i++) {
