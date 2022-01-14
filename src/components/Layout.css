@@ -1,0 +1,6 @@
+.ulStyle li {
+    /* list-style-type: none; */
+    display: inline;
+    margin-left: 20px;
+    background-color: grey
+};

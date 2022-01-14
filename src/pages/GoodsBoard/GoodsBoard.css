@@ -1,0 +1,55 @@
+.goodsBoardTemplate {
+  min-height: 970px;
+  width: 70%;
+  height: auto;
+  background-color: lemonchiffon;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.goodsBoardHead {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 30px 0;
+}
+
+.goodsBoardAreaSelect{
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.goodsBoardWrap_Goods {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  width: 200px;
+  height: 310px;
+  margin: 10px 20px;
+}
+
+.goodsBoardImg {
+  width: 200px;
+  height: 200px;
+  background-image: url("./스크린샷.png");
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.goodsBoardContents div {
+  padding: 2px 0;
+}
+
+.goodsBoardPrice {
+  font-weight: bolder;
+}
+
+.goodsBoardCity {
+  font-size: smaller;
+}
+
+.goodsBoard {
+  display: flex;
+  font-size: smaller;
+  color: gray;
+}
